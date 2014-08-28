@@ -1,0 +1,7 @@
+
+::::: CURRENT/NEXT ::
+
+- [FEATURE]: `Storage#get('post/*')` - get all documents of type 'post' (...using some kind of pagination if possible?)
+
+- [FEATURE]: `Storage#types` - export all document types.
+

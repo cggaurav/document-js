@@ -1,0 +1,27 @@
+{
+  "name": "document-js",
+  "description": "",
+  "keywords": [
+    "document",
+    "odm",
+    "storage"
+  ],
+  "homepage": "https://github.com/cggaurav/document-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cggaurav/document-js"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./document.js",
+  "scripts": {
+    "test": "make test",
+    "test-ci": "make test-ci",
+    "test-remote": "make test-remote"
+  },
+  "bin": {},
+  "devDependencies": {
+    "karma": "^0.12.23"
+  }
+}
