@@ -1,10 +1,11 @@
 # DOCUMENT-JS
 
 
-**Minimalistic ODM** for the browser implementing the most fundamental operations (such as `GET`/`SET`/`DEL`) on different kinds of "document(-ish)" stores using **one unified API**. Switching database should be a matter of changing a line of code.
+**Minimalistic ODM** for the browser implementing the most fundamental operations (such as `GET`/`SET`/`DEL`) on kind of Document(s)  using **one unified API**. Switching brower storage adapters should be a matter of changing a line of code.
 
 Inspired by [node-document](https://github.com/grimen/node-document)
 
+The Collection is the plural of a Document
 
 ## Document
 
@@ -24,11 +25,12 @@ The ODM.
 	* `diff`
 	* `clone`
 	* `inspect`
+  * `sync` using [Object.observe()](https://github.com/grimen/node-document)
 
 
 ### [**Storage**]
 
-Unified interface for write/read data to/from differen kinds of storages/databases.
+Unified interface for write/read data to/from differen kinds of [Storages](http://www.html5rocks.com/en/features/storage)
 
 * Operations: Single + Bulk
 	* `get`
@@ -37,4 +39,8 @@ Unified interface for write/read data to/from differen kinds of storages/databas
 	* `exists`
 * Adapters
 	* Memory
+  * Cookie
+  * SessionStorage
   * LocalStorage
+  * IndexDB
+
